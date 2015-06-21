@@ -2,7 +2,9 @@
 
 The data for each of the variables represents the mean of selected variables from the original data, which was obtained in an experiment carried out on a group of 30 people in ages 19-48. Each person performed six activities while wearing a smartphone, allowing acceleration and angular velocity signals to be captured and processed with signal filters and a fast fourier transform to compute different direction and frequency signals. See [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for more information about the experiment.
 
-From the original data set, I selected variables that had an embedded *mean-()* or *std-()* in the variable name, renamed these variables by replacing the embedded text with -MEAN or -STD, and then appended the text to the end of the string. In the original experiment, the data is divided into two sets, training and test data; however, the data that I selected is the combination of both data sets. Finally, for each unique (subject, activity) pair, I computed the mean of each feature.  Therefore, all the values of each feature listed below represent the mean of either the mean or standard deviation of the measurements in the original data.
+From the original data set, I selected variables that had an embedded *mean-()* or *std-()* in the variable name, renamed these variables by replacing the embedded text with -MEAN or -STD, and then appended the text to the end of the string. In the original experiment, the data is divided into two sets, training and test data; however, the data that I selected is the combination of both data sets. Finally, for each unique pair *(subject, activity)*, I computed the mean of each feature.  Therefore, all the values of each feature listed below represent the mean of either the mean or standard deviation of the measurements in the original data.
+
+### Variable Names
 
 **subject** [*factor*] -- The subject in the activity: 1 - 30.
 
